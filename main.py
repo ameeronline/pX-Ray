@@ -20,11 +20,11 @@ def diagnose():
     path = filename.replace("/", "\\")
     result = Predict(path=path)
     if result == 'Person is safe.':
-        text1 = Text(frame2,font="Robote 20", bg="white", fg='green', relief=GROOVE)
+        text1 = Text(frame2,font="Robote 15", bg="white", fg='green', relief=GROOVE)
         text1.place(x=0,y=0,width=320,height=295)
     else:
-        result = 'Person is affected with Pneumonia. \n60% Disease Spread Diagnosed.. \nAdvised to Consult an Pulmonologist Nearby!'
-        text1 = Text(frame2,font="Robote 20", bg="white", fg='red', relief=GROOVE)
+        result = 'Person is affected with Pneumonia. \n60% disease spread diagnosed..'
+        text1 = Text(frame2,font="Robote 15", bg="white", fg='red', relief=GROOVE)
         text1.place(x=0,y=0,width=320,height=295)
     text1.delete(1.0,END)
     text1.insert(END, result)
